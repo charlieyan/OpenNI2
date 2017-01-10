@@ -165,3 +165,10 @@ Then, run:
 		ReleaseVersion.py [x86|x64|arm|android]
 
   - The installer will be placed in the `Final` directory
+
+### Update your bashrc
+
+  - source $EGO_THIRDPARTY/OpenNI2/Packaging/OpenNI-Linux-x64-2.2/OpenNIDevEnvironment
+  - this will export OPENNI2_INCLUDE, OPENNI2_REDIST for you to compile against
+  - include_directories($ENV{OPENNI2_INCLUDE})
+  - link_directories($ENV{OPENNI2_REDIST})
